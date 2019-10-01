@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 @Injectable({
@@ -22,6 +22,13 @@ export class GaleryService {
 
     return this.http.post(this.URI, fd);
 
+  }
+
+  getPhotos(){
+    
+    
+    const headers = new HttpHeaders().set('a-access-token', localStorage.getItem('token') );
+    return this.http.get(this.URI, { headers: headers});
   }
 
 }

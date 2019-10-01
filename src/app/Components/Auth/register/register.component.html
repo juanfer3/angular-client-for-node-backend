@@ -1,0 +1,31 @@
+<!-- example content -->
+<div class="container">
+    <div class="col s12 m12">
+        <form >
+            <div class="card">
+
+                <div class="card-content">
+                    
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                        <div class="input-field col s6">
+                            <input  type="text" class="validate" required #name/>
+                            <label for="last_name">Nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input  type="text" class="validate" required #username/>
+                            <label for="last_name">Username</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input  type="password" class="validate" required #password/>
+                            <label for="last_name">Password</label>
+                        </div>
+                    
+                </div>
+                <div class="card-action">
+                    <button type="button" (click)="register(name, username, password)"  class="waves-effect waves-light btn">Registrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

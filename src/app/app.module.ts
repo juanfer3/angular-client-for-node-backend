@@ -14,12 +14,16 @@ import { GaleryService } from './Services/Galery/galery.service';
 
 import { GaleryComponent } from './Components/Galery/galery/galery.component';
 import { GaleryFormComponent } from './Components/Galery/galery-form/galery-form.component';
+import { LoginComponent } from './Components/Auth/login/login.component';
+import { RegisterComponent } from './Components/Auth/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GaleryComponent,
-    GaleryFormComponent
+    GaleryFormComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
