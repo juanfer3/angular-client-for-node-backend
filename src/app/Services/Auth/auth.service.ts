@@ -28,7 +28,7 @@ export class AuthService {
   login(user: User) {
     const json = JSON.stringify(user);
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
-    return this.http.post<User>(this.Url+'auth/login' , json, { headers: headers});
+    return this.http.post<User>(this.Url+'login' , json, { headers: headers});
   }
 
   setSession(user: User, token:string): void {
